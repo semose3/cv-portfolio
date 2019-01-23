@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Ubuntu);
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #ddf5f7;
+}
+
+.opacity{
+  opacity: 0;
+}
+
+
+#skills, #contact{
+  padding: 20px 0;
+}
+.both{clear:both;}
+.f-right{float:right;}
+
+.container{
+  margin: auto;
+}
+
+.light-blue{
+  background-color: #ddf5f7;
+}
+.baby-blue{
+  background-color: #a2eae2;
+}
+h1{
+  font-size: 70px;
+  color: #41aaa8;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 500;
+}
+
+h2, h3, h4{
+  font-family: 'Ubuntu', sans-serif;
+  color: #105e62;
+  font-size: 35px;
+  margin-bottom: 5%;
+  font-weight: 600;
+}
+
+#about h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #b5525c;
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+span{
+  text-decoration: underline;
+}
+
+.siliko-color{
+  color: #4d8f1a;
+}
+hr{
+  border: 10px dotted #b5525c;
+  border-bottom: none;
+  width: 100px;
+  margin-top: 10%;
+    margin-bottom: 10%;
+}
+.p-t5{
+  padding-top: 5%;
+}
+
+/* MAIN HEADER */
+#main-header{
+  background-color: #a2eae2;
+}
+
+#cloud-top, #cloud-bottom, #mountain-img{
+
+}
+
+#cloud-top{
+  margin-top: 50px;
+  position: relative;
+  left: 200px;
+}
+
+#cloud-bottom{
+  position: absolute;
+}
+
+
+/* SECTION ABOUT */
+#about p{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.about-hobbies{
+  background-color: black;
+}
+/* ABOUT CAROUSEL */
+.vh100{
+  height: 100vh;
+}
+.carousel-item h2{
+  padding-top: 5rem;
+}
+#about-carousel{margin: 0;}
+
+img.carousel-image, img.carousel-image-profile{
+  margin-bottom: 2rem;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ height: 50px;
+ width: 50px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  height: 50px;
+  width: 50px;
+}
+
+#about-education .carousel-image{
+  width: 250px;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#about-education p{
+  font-size: 25px;
+  width: 40%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.small-img{
+  width: 10%;
+}
+.medium-img{
+  width: 60%;
+  margin-bottom: 50px;
+}
+ .text-box{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.text-box p{
+  font-size: 26px;
+}
+/* SECTION SKILLS */
+
+#skills p{
+  width: 400px;
+  margin: 0 auto;
+}
+
+#skills img{
+  width: 200px;
+  height: auto;
+}
+
+
+
+
+/* SECTION PROJECTS */
+
+.project-a a{
+  padding: 15px;
+  margin: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  border: solid 2px #105e62;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #b5525c;
+    display: block;
+}
+
+.project-a a:hover{
+  color: #105e62;
+  cursor: pointer;
+  border: dotted 2px #105e62;
+}
+
+.project-a p{
+  font-size: 16px;
+}
+
+/* SECTION CONTACT */
+#contact a{
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: block;
+  border: 3px solid #b5525c;
+
+  background-color: #ddf5f7;
+  color: #b5525c;
+
+  width: 250px;
+
+  margin: 20px auto;
+  padding: 5px;
+}
+
+#contact a:hover{
+  background-color: #b5525c;
+  color: #ddf5f7;
+  border: 3px solid #ddf5f7;
+  box-shadow: 3px 3px 3px #b5525c;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media(max-width: 767px){
+  /* #about-education img.carousel-image{
+    width: 20%;
+    height: auto;
+  } */
+
+  .small-img{
+    width: 20%;
+  }
+
+
+
+  /* .carousel-image-profile{
+    width: 30%;
+    height: auto;
+  } */
+
+}
+
+@media(max-width: 1050px){
+  #about-education p{
+    font-size: 18px;
+    width: 90%;
+      font-family: 'Ubuntu', sans-serif;
+  }
+
+  @media(min-width: 1050px){
+    #about-education img.carousel-image{
+      width: 300px;
+      height: auto;
+    }
+    }
+}

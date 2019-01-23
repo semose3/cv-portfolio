@@ -1,0 +1,2 @@
+aria-hidden="true"
+	- za slepe ko jim racunalnik govori content na strani, da ne poslušajo napridmer za vsak gumb.
