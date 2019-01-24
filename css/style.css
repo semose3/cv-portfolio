@@ -75,6 +75,11 @@ hr{
   padding-top: 5%;
 }
 
+#about-carousel .carousel .slide{
+  padding: 0;
+  margin: 0;
+}
+
 /* MAIN HEADER */
 #main-header{
   background-color: #a2eae2;
@@ -108,10 +113,17 @@ hr{
 .vh100{
   height: 100vh;
 }
+
+.carousel-item{
+  width: 100%;
+  overflow: hidden;
+  right: 0;
+}
+
 .carousel-item h2{
   padding-top: 5rem;
 }
-#about-carousel{margin: 0;}
+
 
 img.carousel-image, img.carousel-image-profile{
   margin-bottom: 2rem;
@@ -129,6 +141,8 @@ img.carousel-image, img.carousel-image-profile{
   width: 50px;
 }
 
+
+
 #about-education .carousel-image{
   width: 250px;
   height: auto;
@@ -140,6 +154,10 @@ img.carousel-image, img.carousel-image-profile{
   font-size: 25px;
   width: 40%;
     font-family: 'Ubuntu', sans-serif;
+}
+
+#about p{
+  width: 100%;
 }
 
 .small-img{
@@ -165,7 +183,7 @@ img.carousel-image, img.carousel-image-profile{
 /* SECTION SKILLS */
 
 #skills p{
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 

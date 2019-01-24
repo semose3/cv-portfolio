@@ -64,6 +64,9 @@ $(document).ready(()=>{
 width = $(window).width();
 console.log("width: " + width);
 
+
+
+
 $(window).scroll(function(){
 
   if($(this).scrollTop() > position-200){
