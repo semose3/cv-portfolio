@@ -156,9 +156,7 @@ img.carousel-image, img.carousel-image-profile{
     font-family: 'Ubuntu', sans-serif;
 }
 
-#about p{
-  width: 100%;
-}
+
 
 .small-img{
   width: 10%;
@@ -278,7 +276,11 @@ img.carousel-image, img.carousel-image-profile{
 
   #cloud-bottom{
     display: none;
-  };
+  }
+
+  #about p{
+    width: 100%;
+  }
 
 
 
