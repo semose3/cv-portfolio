@@ -1,21 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Ubuntu);
 
-body{
+
+html, body{
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
-  background-color: #ddf5f7;
+  overflow: auto;
 }
+body{ background-color: #ddf5f7; }
 
-.opacity{
-  opacity: 0;
-}
+.opacity{ opacity: 0; }
 
 
-#skills, #contact{
-  padding: 20px 0;
-}
-.both{clear:both;}
-.f-right{float:right;}
+#skills, #contact{ padding: 20px 0; }
+
+.both{ clear:both; }
+
+.f-right{ float:right; }
 
 .container{
   margin: auto;
@@ -61,6 +63,7 @@ span{
 .siliko-color{
   color: #4d8f1a;
 }
+
 hr{
   border: 10px dotted #b5525c;
   border-bottom: none;
@@ -146,6 +149,10 @@ img.carousel-image, img.carousel-image-profile{
   width: 60%;
   margin-bottom: 50px;
 }
+
+.hobbies-img{
+  width: 30%;
+}
  .text-box{
   position: absolute;
   left: 50%;
@@ -223,23 +230,52 @@ img.carousel-image, img.carousel-image-profile{
 
 /* MEDIA QUERY */
 @media(max-width: 767px){
-  /* #about-education img.carousel-image{
-    width: 20%;
-    height: auto;
-  } */
 
   .small-img{
     width: 20%;
   }
 
+@media(max-width: 560px){
+
+  #cloud-top{
+    position: relative;
+    left:100px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-control-prev-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   height: 25px;
+   width: 25px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media(max-width: 430px){
+
+  #cloud-bottom{
+    display: none;
+  };
 
 
-  /* .carousel-image-profile{
-    width: 30%;
-    height: auto;
-  } */
 
 }
+
+@media(max-width: 355px){
+  #cloud-top{
+    display: none;
+  }
+
+  #main-header h1{
+    margin-top: 20px;
+  }
+}
+
 
 @media(max-width: 1050px){
   #about-education p{
