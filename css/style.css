@@ -6,7 +6,7 @@ html, body{
   height: auto;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  /* overflow: auto; */
 }
 body{ background-color: #ddf5f7; }
 
@@ -22,7 +22,9 @@ body{ background-color: #ddf5f7; }
 .container{
   margin: auto;
 }
-
+.orange-bg{
+  background-color: #b5525c;
+}
 .light-blue{
   background-color: #ddf5f7;
 }
@@ -99,6 +101,25 @@ hr{
   position: absolute;
 }
 
+/* NAVIGATION BAR */
+#navigation-bar{
+    position: sticky;
+    top: 0;
+    opacity: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+#navigation-bar div.navbar{
+  border-bottom: 3px solid #fff;
+}
+
+#navigation-bar ul li a{
+  color: #fff;
+  opacity: 1;
+}
 
 /* SECTION ABOUT */
 #about p{

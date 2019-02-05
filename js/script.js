@@ -42,7 +42,14 @@ function mainHeaderFadeOut(){
 }
 
 
+// NAVIGATION bar
+function showNav(){
 
+}
+
+function hideNav(){
+
+}
 // EDUCATION VARIABLES
 var educationEl = $("#about-education img");
 var carouselEL = $(".carousel-item");
@@ -51,10 +58,11 @@ var carouselEL = $(".carousel-item");
 
 
 // FINDING POSITION
-var skills = $("#skills");
-var position = skills.position().top;
+let about = $("about");
+let skills = $("#skills");
+let skillsPosition = skills.position().top;
 
-console.log(position);
+console.log(skillsPosition);
 
 $(document).ready(()=>{
   mainHeaderFadeIn();
@@ -65,11 +73,24 @@ width = $(window).width();
 console.log("width: " + width);
 
 
+// $(window).scroll(function(){
+//
+// });
+
 
 
 $(window).scroll(function(){
+  let scrollPosition = $(window).scrollTop();
+  console.log("Scroll position" + scrollPosition);
 
-  if($(this).scrollTop() > position-200){
+if(scrollPosition > 700){
+  $("#navigation-bar").delay().animate({
+    opacity: 1
+  }, 1000);
+}
+
+
+  if($(this).scrollTop() > skillsPosition-200){
     $("#skills p").delay().animate({opacity: 1});
     $("#skills #html-img").delay(500).animate({opacity: 1}, 500);
     $("#skills #css-img").delay(1300).animate({opacity: 1}, 500);
