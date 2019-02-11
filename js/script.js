@@ -83,7 +83,7 @@ $(window).scroll(function(){
   let scrollPosition = $(window).scrollTop();
   console.log("Scroll position" + scrollPosition);
 
-if(scrollPosition > 700){
+if(scrollPosition > 550){
   $("#navigation-bar").delay().animate({
     opacity: 1
   }, 1000);
